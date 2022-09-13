@@ -16,3 +16,22 @@ console.log(example_array.constructor === Array) // output: true
 console.log(example_array.constructor === Number) // output: false
 
 // js is kinda cool
+
+// 12 Sep 2022
+// I learned how to check class inheritence by using .prototype and instanceof
+
+class ExampleA {
+    // do nothing lol
+}
+
+class ExampleB {
+    // useless, failure
+}
+
+class ExampleC extends ExampleA {
+    // do something lmao
+}
+
+console.log(ExampleB.prototype instanceof ExampleA) // output: false
+console.log(ExampleC.prototype instanceof ExampleA) // output: true
+console.log(ExampleA.prototype instanceof ExampleC) // output: false
