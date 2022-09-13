@@ -35,3 +35,11 @@ class ExampleC extends ExampleA {
 console.log(ExampleB.prototype instanceof ExampleA) // output: false
 console.log(ExampleC.prototype instanceof ExampleA) // output: true
 console.log(ExampleA.prototype instanceof ExampleC) // output: false
+
+
+function ExampleFunction() {
+    const x = "fosly dep trai";
+    console.log(x)
+}
+
+ExampleFunction();
